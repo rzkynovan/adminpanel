@@ -11,7 +11,9 @@
   <title>RuangAdmin - Dashboard</title>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  @yield('extendcss2')
   <link href="css/ruang-admin.min.css" rel="stylesheet">
+  @yield('extendcss1')
 </head>
 
 <body id="page-top">
@@ -42,9 +44,10 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  @yield('extendjs2')
   <script src="js/ruang-admin.min.js"></script>
-  <script src="vendor/chart.js/Chart.min.js"></script>
-  <script src="js/demo/chart-area-demo.js"></script>  
+  @yield('extendjs')
+
 </body>
 
 </html>

@@ -150,7 +150,7 @@
             </div>
           </div>
           <div class="mb-3">
-            <div class="small text-gray-500">Gundam 90'Editions
+            <div class="small text-gray-500">Gundam 90 Editions
               <div class="small float-right"><b>500 of 800 Items</b></div>
             </div>
             <div class="progress" style="height: 12px;">
@@ -222,7 +222,7 @@
               <tr>
                 <td><a href="#">RA5324</a></td>
                 <td>Jaenab Bajigur</td>
-                <td>Gundam 90' Edition</td>
+                <td>Gundam 90 Edition</td>
                 <td><span class="badge badge-warning">Shipping</span></td>
                 <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
               </tr>
@@ -263,7 +263,7 @@
           <div class="customer-message align-items-center">
             <a class="font-weight-bold" href="#">
               <div class="text-truncate message-title">Hi there! I am wondering if you can help me with a
-                problem I've been having.</div>
+                problem Ive been having.</div>
               <div class="small text-gray-500 message-time font-weight-bold">Udin Cilok · 58m</div>
             </a>
           </div>
@@ -329,4 +329,8 @@
   </div>
 
 </div>
+@endsection
+@section('extendjs')
+<script src="vendor/chart.js/Chart.min.js"></script>
+<script src="js/demo/chart-area-demo.js"></script>  
 @endsection
