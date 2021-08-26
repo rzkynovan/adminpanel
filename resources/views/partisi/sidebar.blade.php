@@ -7,7 +7,7 @@
           <div class="sidebar-brand-text mx-3">RuangAdmin</div>
         </a>
         <hr class="sidebar-divider my-0">
-        <li class="nav-item active">
+        <li class="nav-item {{ $menu === "Dashboard" ? 'active' : '' }}">
           <a class="nav-link" href="index.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
@@ -16,7 +16,7 @@
         <div class="sidebar-heading">
           Features
         </div>
-        <li class="nav-item">
+        <li class="nav-item {{ $menu === "Bootui" ? 'active' : ''}}">
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
             aria-expanded="true" aria-controls="collapseBootstrap">
             <i class="far fa-fw fa-window-maximize"></i>
@@ -24,13 +24,13 @@
           </a>
           <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Bootstrap UI</h6>
-              <a class="collapse-item" href="alerts.html">Alerts</a>
-              <a class="collapse-item" href="buttons.html">Buttons</a>
-              <a class="collapse-item" href="dropdowns.html">Dropdowns</a>
-              <a class="collapse-item" href="modals.html">Modals</a>
-              <a class="collapse-item" href="popovers.html">Popovers</a>
-              <a class="collapse-item" href="progress-bar.html">Progress Bars</a>
+              <h6 class="collapse-header ">Bootstrap UI</h6>
+              <a class="collapse-item {{ $title === "Alrets" ? 'active' : '' }}" href="alerts.html">Alerts</a>
+              <a class="collapse-item {{ $title === "Buttons" ? 'active' : '' }}" href="buttons.html">Buttons</a>
+              <a class="collapse-item {{ $title === "Dropdowns" ? 'active' : '' }}" href="dropdowns.html">Dropdowns</a>
+              <a class="collapse-item {{ $title === "Modals" ? 'active' : '' }}" href="modals.html">Modals</a>
+              <a class="collapse-item {{ $title === "Pepovers" ? 'active' : '' }}" href="popovers.html">Popovers</a>
+              <a class="collapse-item {{ $title === "Progres Bars" ? 'active' : '' }}" href="progress-bar.html">Progress Bars</a>
             </div>
           </div>
         </li>
@@ -98,3 +98,4 @@
         <div class="version" id="version-ruangadmin"></div>
       </ul>
       <!-- Sidebar -->
+      

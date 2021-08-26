@@ -24,7 +24,7 @@
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your
+              <small id="emailHelp" class="form-text text-muted">We will never share your
                 email with anyone else.</small>
             </div>
             <div class="form-group">
@@ -225,11 +225,11 @@
               <label>Switches</label>
               <div class="custom-control custom-switch">
                 <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                <label class="custom-control-label" for="customSwitch1">Toggle this 'switch' element</label>
               </div>
               <div class="custom-control custom-switch">
                 <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
-                <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                <label class="custom-control-label" for="customSwitch2">Disabled 'switch' element</label>
               </div>
             </div>
           </form>
@@ -258,7 +258,7 @@
           <label for="basic-url">Your vanity URL</label>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+              <span class="input-group-text" id="basic-addon3">example.com/users/</span>
             </div>
             <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
           </div>

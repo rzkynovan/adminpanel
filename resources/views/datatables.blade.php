@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('extendcss1')
-<link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">    
+<link href="{{ URL::asset('vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">    
 @endsection
 @section('mainindex')
 <!-- Container Fluid-->
@@ -1034,8 +1034,8 @@
 @endsection
 @section('extendjs')
 <!-- Page level plugins -->
-  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="{{ URL::asset('vendor/datatables/jquery.dataTables.min.js') }}"></script>
+  <script src="{{ URL::asset('vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
 
   <!-- Page level custom scripts -->
   <script>

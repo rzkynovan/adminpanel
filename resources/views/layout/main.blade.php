@@ -8,11 +8,11 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="img/logo/logo.png" rel="icon">
-  <title>RuangAdmin - Dashboard</title>
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <title>RuangAdmin - {{ $title }}</title>
+  <link href="{{ URL::asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ URL::asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
   @yield('extendcss2')
-  <link href="css/ruang-admin.min.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/ruang-admin.min.css') }}" rel="stylesheet">
   @yield('extendcss1')
 </head>
 
@@ -41,11 +41,11 @@
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="{{ URL::asset('vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ URL::asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ URL::asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
   @yield('extendjs2')
-  <script src="js/ruang-admin.min.js"></script>
+  <script src="{{ URL::asset('../js/ruang-admin.min.js') }}"></script>
   @yield('extendjs')
 
 </body>

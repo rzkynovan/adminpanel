@@ -331,6 +331,6 @@
 </div>
 @endsection
 @section('extendjs')
-<script src="vendor/chart.js/Chart.min.js"></script>
-<script src="js/demo/chart-area-demo.js"></script>  
+<script src="{{ URL::asset('vendor/chart.js/Chart.min.js') }}"></script>
+<script src="{{ URL::asset('js/demo/chart-area-demo.js') }}"></script>  
 @endsection

@@ -40,7 +40,7 @@
               <tr>
                 <td><a href="#">RA5324</a></td>
                 <td>Jaenab Bajigur</td>
-                <td>Gundam 90' Edition</td>
+                <td>Gundam 90 Edition</td>
                 <td><span class="badge badge-warning">Shipping</span></td>
                 <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
               </tr>

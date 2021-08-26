@@ -1,13 +1,13 @@
 @extends('layout.main')
 @section('extendcss2')
 <!-- Select2 -->
-<link href="vendor/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css">
+<link href="{{ URL::asset('vendor/select2/dist/css/select2.min.css') }}" rel="stylesheet" type="text/css">
 <!-- Bootstrap DatePicker -->  
-<link href="vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" >
+<link href="{{ URL::asset('vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css') }}" rel="stylesheet" >
 <!-- Bootstrap Touchspin -->
-<link href="vendor/bootstrap-touchspin/css/jquery.bootstrap-touchspin.css" rel="stylesheet" >
+<link href="{{ URL::asset('vendor/bootstrap-touchspin/css/jquery.bootstrap-touchspin.css') }}" rel="stylesheet" >
 <!-- ClockPicker -->
-<link href="vendor/clock-picker/clockpicker.css" rel="stylesheet">
+<link href="{{ URL::asset('vendor/clock-picker/clockpicker.css') }}" rel="stylesheet">
 @endsection
 @section('mainindex')
 <!-- Container Fluid-->
@@ -299,13 +299,13 @@
 @endsection
 @section('extendjs2')
 <!-- Select2 -->
-<script src="vendor/select2/dist/js/select2.min.js"></script>
+<script src="{{ URL::asset('vendor/select2/dist/js/select2.min.js') }}"></script>
 <!-- Bootstrap Datepicker -->
-<script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="{{ URL::asset('vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js') }}"></script>
 <!-- Bootstrap Touchspin -->
-<script src="vendor/bootstrap-touchspin/js/jquery.bootstrap-touchspin.js"></script>
+<script src="{{ URL::asset('vendor/bootstrap-touchspin/js/jquery.bootstrap-touchspin.js') }}"></script>
 <!-- ClockPicker -->
-<script src="vendor/clock-picker/clockpicker.js"></script>
+<script src="{{ URL::asset('vendor/clock-picker/clockpicker.js') }}"></script>
 {{--  Java Script on Page   --}}
 <script>
   $(document).ready(function () {
