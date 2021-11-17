@@ -10,7 +10,7 @@
         <li class="nav-item {{ $menu === "Dashboard" ? 'active' : '' }}">
           <a class="nav-link" href="index.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
+            <span>Dashboard</span></a>  
         </li>
         <hr class="sidebar-divider">
         <div class="sidebar-heading">
@@ -20,25 +20,23 @@
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
             aria-expanded="true" aria-controls="collapseBootstrap">
             <i class="far fa-fw fa-window-maximize"></i>
-            <span>Bootstrap UI</span>
+            <span>User Menu</span>
           </a>
           <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header ">Bootstrap UI</h6>
-              <a class="collapse-item {{ $title === "Alrets" ? 'active' : '' }}" href="alerts.html">Alerts</a>
-              <a class="collapse-item {{ $title === "Buttons" ? 'active' : '' }}" href="buttons.html">Buttons</a>
-              <a class="collapse-item {{ $title === "Dropdowns" ? 'active' : '' }}" href="dropdowns.html">Dropdowns</a>
-              <a class="collapse-item {{ $title === "Modals" ? 'active' : '' }}" href="modals.html">Modals</a>
-              <a class="collapse-item {{ $title === "Pepovers" ? 'active' : '' }}" href="popovers.html">Popovers</a>
-              <a class="collapse-item {{ $title === "Progres Bars" ? 'active' : '' }}" href="progress-bar.html">Progress Bars</a>
+              <h6 class="collapse-header ">User</h6>
+              <a class="collapse-item {{ $title === "Alrets" ? 'active' : '' }}" href="alerts.html">User List</a>
+              <a class="collapse-item {{ $title === "Buttons" ? 'active' : '' }}" href="buttons.html">History</a>
+              <a class="collapse-item {{ $title === "Dropdowns" ? 'active' : '' }}" href="dropdowns.html">Terminate</a>
+              <a class="collapse-item {{ $title === "Modals" ? 'active' : '' }}" href="modals.html">Edit</a>
             </div>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
             aria-controls="collapseForm">
-            <i class="fab fa-fw fa-wpforms"></i>
-            <span>Forms</span>
+            <i class="far fa-fw fa-window-maximize"></i>
+            <span>Dokter Menu</span>
           </a>
           <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">

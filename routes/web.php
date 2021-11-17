@@ -16,8 +16,8 @@ use App\Http\Controllers\FeaturesController;
 |
 */
 
-Route::get('/', [HomeController::class, 'home']);
 
+Route::get('/', [HomeController::class, 'home']);
 Route::get('/index.html', [HomeController::class, 'home']);
 
 Route::get('/alerts.html', [FeaturesController::class, 'alrets']);
@@ -27,6 +27,12 @@ Route::get('/modals.html', [FeaturesController::class, 'modals']);
 Route::get('/popovers.html', [FeaturesController::class, 'popovers']);
 Route::get('/progress-bar.html', [FeaturesController::class, 'progresbars']);
 
+Route::get('/form_advanceds.html', function () {
+    return view('form_advanceds');
+});
+Route::get('/form_basics.html', function () {
+    return view('form_basics');
+});
 
 Route::get('/404.html', function () {
     return view('404');
@@ -43,12 +49,6 @@ Route::get('/copycontent.html', function () {
 Route::get('/datatables.html', function () {
     return view('datatables');
 });
-Route::get('/form_advanceds.html', function () {
-    return view('form_advanceds');
-});
-Route::get('/form_basics.html', function () {
-    return view('form_basics');
-});
 Route::get('/login.html', function () {
     return view('login');
 });
@@ -61,3 +61,8 @@ Route::get('/simple-tables.html', function () {
 Route::get('/ui-colors.html', function () {
     return view('ui-colors');
 });
+
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
