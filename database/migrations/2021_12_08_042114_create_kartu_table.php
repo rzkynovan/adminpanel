@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePelajarsTable extends Migration
+class CreateKartuTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreatePelajarsTable extends Migration
      */
     public function up()
     {
-        Schema::create('pelajars', function (Blueprint $table) {
+        Schema::create('kartu_table', function (Blueprint $table) {
             $table->id();
-            $table->string('nama', 150);
-            $table->date('TanggalLahir');
-            $table->string('alamat', 255);
-            $table->bigInteger('phone')->uniqid();
-            $table->softDeletes();
+            $table->string('kartu_ktp');
+            $table->string('kartu_askes')->nullable();
+            $table->string('kartu_bpjs')->nullable();
+            $table->string('kartu_identitas')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreatePelajarsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pelajars');
+        Schema::dropIfExists('kartu_table');
     }
 }
